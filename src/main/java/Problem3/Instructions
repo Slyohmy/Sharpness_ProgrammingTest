@@ -1,0 +1,12 @@
+Calculator problems
+For each problem, create a console application or a web page that works as a calculator. The calculator
+accepts keyboard input from a user (a mathematical expression) and presents the result (a number).
+No fancier type of user interface is required.
+The calculator must handle expressions with addition, subtraction, multiplication, and division.
+Present a separate solution for each calculator problem.
+If your programming language of choice has evaluation of mathematical expressions built into it (like Python
+and Javascript does), don't use that. We want to see you write some code.
+
+
+Problem 3: one operator, two parameters
+The calculator handles exactly one operator and two numerical parameters.
