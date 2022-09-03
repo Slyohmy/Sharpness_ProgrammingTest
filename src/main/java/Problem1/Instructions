@@ -1,0 +1,7 @@
+Problem 1: Detect Anagram
+Write a function to check if two provided strings are anagrams of each other.
+Your function should return true if two strings are anagram, false otherwise.
+Two strings are anagrams if they are the same length and contain the same characters but in a different
+order. For example, "army" and "Mary" are anagrams.
+You should ignore cases for this problem.
+Show that the function works as intended with unit tests.

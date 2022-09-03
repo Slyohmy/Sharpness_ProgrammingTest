@@ -1,3 +1,5 @@
+package Problem1Tests;
+
 import Problem1.Anagram;
 import org.junit.jupiter.api.Test;
 
@@ -19,6 +21,11 @@ public class AnagramTest {
 
     @Test
     public void checkIfCasesensitive() {
-        assertEquals(anagram.detectAnagram("NOMIS", "simon"), equals(this));
+        assertEquals(anagram.detectAnagram("army", "MAry"), equals(this));
+    }
+
+    @Test
+    public void checkDifferentLengths(){
+        assertFalse(anagram.detectAnagram("simooooooon", "simon"));
     }
 }

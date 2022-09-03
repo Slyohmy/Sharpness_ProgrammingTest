@@ -1,0 +1,9 @@
+Problem 5: multiple operators of different precedence
+The calculator handles multiple operators of different precedence.
+
+example:
+
+calculator.evaluate("2+3*40"); // returns 122
+calculator.evaluate("2 * 3 + 4"); // returns 10
+calculator.evaluate("2 / 3 + 4 - 1"); // returns 3.66666666....
+calculator.evaluate("2 - 3 * 4"); // returns -10

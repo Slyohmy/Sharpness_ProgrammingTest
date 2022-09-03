@@ -1,0 +1,9 @@
+Problem 4: multiple operators of the same precedence
+The calculator handles multiple operators of the same precedence.
+
+example:
+
+calculator.evaluate("2+30+4"); // returns 36
+calculator.evaluate("2 - 3 + 4 + 15"); // returns 18
+calculator.evaluate("2 * 3 * 4"); // returns 24
+calculator.evaluate("2 * 3 / 4 * 20”); // returns 30

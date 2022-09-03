@@ -1,0 +1,4 @@
+Problem 2: Find all links on a web page
+Write an application that accepts a URL (like http://google.com) as input that scans that web page for all
+existing web-links (<a> HTML tags) and prints them to the console or presents them on a web page.
+Use Selenium WebDriver for navigating to and reading the DOM of the web page

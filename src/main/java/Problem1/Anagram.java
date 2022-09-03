@@ -15,11 +15,7 @@ public class Anagram {
         char[] sortedString2 = string2.toCharArray();
         Arrays.sort(sortedString2);
 
-        boolean result = Arrays.equals(sortedString1, sortedString2);
-
-        return result;
-
-        //return Arrays.equals(sortedString1, sortedString2);
+        return Arrays.equals(sortedString1, sortedString2);
     }
 }
 
