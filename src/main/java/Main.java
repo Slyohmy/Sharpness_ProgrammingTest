@@ -50,6 +50,11 @@ public class Main {
     }
     public static void WebPageScanner(Scanner scanner) {
 
+        WebPageScanner webPageScanner = new WebPageScanner();
+        System.out.println("Enter URL of the website you'd like to scan: ");
+        String url = scanner.nextLine();
+        webPageScanner.webScan(url);
+
     }
     public static void SimpleCalculator(Scanner scanner) {
         SimpleCalculator simpleCalculator = new SimpleCalculator();
