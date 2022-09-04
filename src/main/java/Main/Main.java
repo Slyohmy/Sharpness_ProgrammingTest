@@ -1,6 +1,9 @@
+package Main;
+
 import Problem1.Anagram;
 import Problem2.WebPageScanner;
 import Problem3.SimpleCalculator;
+import Problem5.AdvancedCalculator;
 
 import java.util.Scanner;
 
@@ -11,9 +14,15 @@ public class Main {
 
         while (running){
             System.out.println("***************************\n" +
-                    " Main Menu\n Choose an app!\n A -> Anagram\n B -> WebPageScanner" +
-                    "\n C -> SimpleCalculator\n D -> MultiCalculator\n E -> AdvancedCalculator\n" +
-                    " 0 -> Exit Menu\n***************************");
+                    "Main Menu\n Choose an app!\n " +
+                    "[A] -> Anagram\n " +
+                    "[B] -> WebPageScanner\n " +
+                    "[C] -> SimpleCalculator\n " +
+                    "[D] -> MultiCalculator\n " +
+                    "[E] -> AdvancedCalculator\n " +
+                    "[0] -> Exit Menu" +
+                    "\n***************************");
+            System.out.print("Enter here: ");
 
             Scanner scanner = new Scanner(System.in);
             String option = scanner.nextLine();
@@ -21,9 +30,9 @@ public class Main {
             switch (option) {
                 case "A" -> Anagram(scanner);
                 case "B" -> WebPageScanner(scanner);
-                case "C" -> SimpleCalculator(scanner);
+                case "C" -> SimpleCalculator();
                 case "D" -> MultiCalculator(scanner);
-                case "E" -> AdvancedCalculator(scanner);
+                case "E" -> AdvancedCalculator();
                 case "0" -> {
                     System.out.println("Exiting...");
                     running = false;
@@ -56,29 +65,15 @@ public class Main {
         webPageScanner.webScan(url);
 
     }
-    public static void SimpleCalculator(Scanner scanner) {
+    public static void SimpleCalculator() {
         SimpleCalculator simpleCalculator = new SimpleCalculator();
         simpleCalculator.calc();
-        scanner.close();
-
-
     }
     public static void MultiCalculator(Scanner scanner) {
 
     }
-    public static void AdvancedCalculator(Scanner scanner) {
-
+    public static void AdvancedCalculator() {
+        AdvancedCalculator advancedCalculator = new AdvancedCalculator();
+        advancedCalculator.advCalc();
     }
-
-            /*Anagram anagram = new Anagram();
-
-        String string1, string2;
-
-        if (anagram.detectAnagram(string1 = "army", string2 = "Mary")) {
-            System.out.println(string1 + " and " + string2 + " is anagram");
-        }
-        else {
-            System.out.println(string1 + " and " + string2 + " are not anagram");
-        }*/
-
 }
