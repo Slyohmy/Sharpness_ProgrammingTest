@@ -1,7 +1,7 @@
 package Main;
 
 import Problem1.Anagram;
-import Problem2.WebPageScanner;
+//import Problem2.WebPageScanner;
 import Problem3.SimpleCalculator;
 import Problem5.AdvancedCalculator;
 
@@ -59,10 +59,10 @@ public class Main {
     }
     public static void WebPageScanner(Scanner scanner) {
 
-        WebPageScanner webPageScanner = new WebPageScanner();
+        /*WebPageScanner webPageScanner = new WebPageScanner();
         System.out.println("Enter URL of the website you'd like to scan: ");
         String url = scanner.nextLine();
-        webPageScanner.webScan(url);
+        webPageScanner.webScan(url);*/
 
     }
     public static void SimpleCalculator() {
