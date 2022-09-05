@@ -31,7 +31,7 @@ public class Main {
                 case "A" -> Anagram(scanner);
                 case "B" -> WebPageScanner(scanner);
                 case "C" -> SimpleCalculator();
-                case "D" -> MultiCalculator(scanner);
+                case "D" -> MultiCalculator();
                 case "E" -> AdvancedCalculator();
                 case "0" -> {
                     System.out.println("Exiting...");
@@ -45,9 +45,9 @@ public class Main {
 
         Anagram anagram = new Anagram();
 
-        System.out.println("Enter first word: ");
+        System.out.println("Enter first string: ");
         String string1 = scanner.nextLine();
-        System.out.println("Enter second word: ");
+        System.out.println("Enter second string: ");
         String string2 = scanner.nextLine();
 
         if (anagram.detectAnagram(string1, string2)){
@@ -66,13 +66,15 @@ public class Main {
 
     }
     public static void SimpleCalculator() {
+
         SimpleCalculator simpleCalculator = new SimpleCalculator();
         simpleCalculator.calc();
     }
-    public static void MultiCalculator(Scanner scanner) {
+    public static void MultiCalculator() {
 
     }
     public static void AdvancedCalculator() {
+
         AdvancedCalculator advancedCalculator = new AdvancedCalculator();
         advancedCalculator.advCalc();
     }
