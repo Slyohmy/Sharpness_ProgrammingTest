@@ -1,6 +1,7 @@
 package Problem1;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Anagram {
 
@@ -16,6 +17,20 @@ public class Anagram {
         Arrays.sort(sortedString2);
 
         return Arrays.equals(sortedString1, sortedString2);
+    }
+
+    public void inputScanIfAnagram() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter first string: ");
+        String string1 = scanner.nextLine();
+        System.out.println("Enter second string: ");
+        String string2 = scanner.nextLine();
+
+        if (detectAnagram(string1, string2)) {
+            System.out.println(string1 + " and " + string2 + " are anagram.");
+        } else {
+            System.out.println(string1 + " and " + string2 + " are not anagram.");
+        }
     }
 }
 

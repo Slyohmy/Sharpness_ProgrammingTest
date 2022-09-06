@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class MultiOPCalculator {
 
-
     public boolean multiOpCalc() {
 
         while (true) {
@@ -13,7 +12,7 @@ public class MultiOPCalculator {
                     "Choose operators.\n " +
                             "[A] -> + and -\n " +
                             "[B] -> * and /\n " +
-                            "[0] -> Return to Main Menu" );
+                            "[0] -> Return to Main Menu");
             System.out.print("Enter here: ");
 
             Scanner scanner = new Scanner(System.in);
@@ -34,7 +33,6 @@ public class MultiOPCalculator {
 
     private static void plusAndMinus(Scanner scanner) {
 
-        char operator;
         char cont = 'Y';
         System.out.print("Enter a number: ");
         double num1 = Double.parseDouble(scanner.nextLine());
@@ -49,7 +47,7 @@ public class MultiOPCalculator {
             invalidCharacter = false;
             System.out.print("\nChoose operation\n[+]\n[-]");
             System.out.print("\n\nEnter: ");
-            operator = scanner.nextLine().charAt(0);
+            char operator = scanner.nextLine().charAt(0);
 
             switch (operator) {
                 case '+' -> {
@@ -74,7 +72,6 @@ public class MultiOPCalculator {
 
     private static void multiAndDivi(Scanner scanner) {
 
-        char operator;
         char cont = 'Y';
         System.out.print("Enter a number: ");
         double num1 = Double.parseDouble(scanner.nextLine());
@@ -89,7 +86,7 @@ public class MultiOPCalculator {
             invalidCharacter = false;
             System.out.print("\nChoose operation\n[*]\n[/]");
             System.out.print("\n\nEnter: ");
-            operator = scanner.nextLine().charAt(0);
+            char operator = scanner.nextLine().charAt(0);
 
             switch (operator) {
                 case '*' -> {
