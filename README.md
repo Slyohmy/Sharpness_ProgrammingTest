@@ -6,3 +6,4 @@ INSTRUCTIONS
 - Execute the program with **java Main.java** command.
 - All programs run through the same Main file via terminal inputs. 
 - Webdriver in Problem 2 is run in Firefox browser. Resource folder contains geckodriver.exe version **geckodriver-v0.31.0-win64** and **selenium-server-4.4.0.jar**.
+- **NOTE** WebPageScanner is currently commented out due to compilation errors with selenium dependencies. 
